@@ -1,7 +1,6 @@
 ### NATS & NATS STREAMING
 
-
-##NATS
+## NATS
 
 extremely lightweight, scalable, performant messaging system.
 
@@ -10,7 +9,7 @@ offers no persistence in standalone/default configuration, so missed messages ar
 
 can be used for message fanout, addressing/discovery, CNC / drain for real time data, load balancing, 
 
-###NATS-STREAMING
+### NATS-STREAMING
 
 sets up and manages a seperate cluster of nats-streaming nodes, that keep track of message sequence, channels("topics"), consumer/group offsets.
 The nats-streaming cluster is managed via the underlying nats-cluster (node discovery, leader election, quorum - all done via NATS).
@@ -23,7 +22,7 @@ nats-streaming clients, communicate by sending "nats-streaming-protocol"-message
 like kafka, the size of messages and the overhead of parsing them is solved by compressing messages to e binary format.
 what avro is to kafka, protocolbuffers is to NATS
 
-##protobuf
+## protobuf
 
 developed by google, and while lacking some features of avro (schema registry, flexible and dynamic schemas), it outperforms acvro by 2-3 times the speed when encoding and decoding, as well as message size.
 
